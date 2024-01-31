@@ -7,7 +7,7 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <div className="bg-[#EFEFEF52] pt-6 px-20 md:px-10 w-full">
+        <div className="bg-[#EFEFEF52] pt-6 w-full">
             <div className="grid grid-cols-4 border-b border-b-[#A4A4A4] w-full h-[368px] gap-x-10">
                 <div className='flex flex-col item-center justify-around h-5/6 mr-6'>
                     <img src={logo} alt="Zani Insurance"/>

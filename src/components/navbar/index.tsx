@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 const Navbar = () => {
     const { pathname } = useLocation()
     return (
-        <div className="w-full bg-[red] h-14 z-5 px-20 md:px-10 flex justify-between items-center">
+        <div className="w-full bg-[red] h-14 z-5 flex justify-between items-center">
             <div>
                 <img src={logo} alt="Zani Insurance"/>
             </div>

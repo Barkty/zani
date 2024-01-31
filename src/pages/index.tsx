@@ -5,13 +5,19 @@ import Layout from "layout";
 const Home = () => {
     return (
         <Layout>
-            <div
-             className="w-full h-screen bg-[#fff] bg-center bg-no-repeat bg-cover"
-             style={{
-                // backgroundImage: `url(${hero})`,
-             }}>
-                
-            </div>
+            <>
+                <div
+                className="w-full h-screen bg-[#fff] bg-center bg-no-repeat bg-cover"
+                style={{
+                    // backgroundImage: `url(${hero})`,
+                }}>
+                    
+                </div>
+                {/* Clients */}
+                <div>
+                    
+                </div>
+            </>
         </Layout>
     )
 }

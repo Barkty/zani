@@ -8,7 +8,7 @@ interface HomeProps {
 
 const Layout = ({ children }: HomeProps) => {
     return (
-        <div className="pt-3">
+        <div className="pt-3 px-20 md:px-10">
             <Navbar />
                 {children}
             <Footer/>
