@@ -7,12 +7,12 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <div className="bg-[#EFEFEF52] pt-6 px-20 md:px-10 w-full">
-            <div className="grid grid-cols-4 border-b border-b-[#A4A4A4] w-full h-[368px] gap-x-10">
-                <div className='flex flex-col item-center justify-around h-5/6 mr-6'>
+        <div className="bg-[#EFEFEF52] pt-6 px-20 md:px-6 w-full">
+            <div className="grid grid-cols-4 md:grid-cols-1 border-b border-b-[#A4A4A4] w-full h-[368px] md:h-fit gap-x-10 md:gap-y-5">
+                <div className='flex flex-col item-center justify-around h-5/6 mr-6 md:w-full'>
                     <img src={logo} alt="Zani Insurance"/>
-                    <p className="font-pop font-normal text-base text-black text-justify">Zani.co ensures her customers a good insurance policy to protect them against risk inturn for regular payment of premium.</p>
-                    <div className='flex w-3/6 items-center justify-between'>
+                    <p className="font-pop font-normal text-base text-black text-justify md:mb-4">Zani.co ensures her customers a good insurance policy to protect them against risk inturn for regular payment of premium.</p>
+                    <div className='flex w-3/6 md:w-4/6 items-center justify-between'>
                         <FaFacebook />
                         <FaTwitter />
                         <FaLinkedin />

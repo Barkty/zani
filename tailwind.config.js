@@ -5,6 +5,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        "2xl": "1400px",
+        "3xl": "1600px",
+        'xl': {'max': '1279px'},
+        'lg': {'max': '1024px'},
+        'md': {'max': '767px'},
+        'sm': {'max': '639px'},
         xs: '320px',
       }
     },
