@@ -1,5 +1,6 @@
 import Layout from "layout";
-import hero from 'assets/hero.svg'
+import hero from 'assets/Personality.jpg'
+import snap from 'assets/hero.svg'
 import flutter from 'assets/flutter.svg'
 import facebook from 'assets/facebook.svg'
 import toyota from 'assets/toyota.svg'
@@ -27,10 +28,31 @@ const Home = () => {
         <Layout>
             <>
                 <div
-                className="w-full h-screen bg-[#fff] bg-center bg-no-repeat bg-cover mb-8"
+                className="w-full h-screen bg-center bg-no-repeat bg-cover mb-8 relative left-0 bottom-0 right-0 -top-14"
                 style={{
                     backgroundImage: `url(${hero})`,
                 }}>
+                    <div className="w-full h-full pt-4 backdrop-brightness-50 bg-[rgb(39, 39, 45)] backdrop-opacity-100 flex items-center justify-center">
+                        <div className="w-full h-auto md:h-full bg-transparent grid grid-cols-2 md:grid-cols-1">
+                            <div className="flex items-center justify-center pt-20">
+                                <div className="w-[80%] md:w-[90%] h-[374px] md:h-full flex flex-col items-center justify-around">
+                                    <p className="text-left font-open text-[64px] md:text-[45px] font-bold leading-[72px] text-white">Stay <span className="font-pop text-[#061FFF]">Jiggy </span>While We Get You <span className="font-pop text-[#061FFF]">Insured</span></p>
+                                    <p className={`${paragraph} text-white md:relative md:-top-6`}>Zani.co ensures her customers a good insurance policy to protect them against risk inturn for regular payment of premium.</p>
+                                    <div className="flex items-center w-full h-auto pt-2">
+                                        <div className="mr-8 md:mr-0">
+                                            <Button type="button" onClick={() => null} variant="primary">Get Started</Button>
+                                        </div>
+                                        <div className="md:hidden">
+                                            <Button type="button" onClick={() => null} variant="secondary">Learn More</Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="relative -bottom-[4.4rem] right-0 md:hidden">
+                                <img src={snap} alt="A lady smiling"/>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 <div className="px-20 md:px-4">
@@ -43,7 +65,7 @@ const Home = () => {
                     </div>
                     <div className="h-[101px] md:h-[40px]"/>
                     {/* About Us */}
-                    <div className={section}>
+                    <div className={section} id="about">
                         {/* Left */}
                         <div>
                             <Divider />
@@ -72,13 +94,13 @@ const Home = () => {
                                     <BsFillPatchCheckFill color="#061FFF" size={20} className="mr-2"/>
                                     <p className="font-pop font-normal text-base md:text-sm text-black text-justify">We provide excellent protections for your deeds</p>
                                 </div>
-                                <Button type="button" onClick={() => null} variant="secondary">Register Now</Button>
+                                <Button type="button" onClick={() => null} variant="primary">Register Now</Button>
                             </div>
                         </div>
                     </div>
 
                     {/* Why */}
-                    <div className={section}>
+                    <div className={section} id="features">
                         {/* Left */}
                         <div>
                             <div className="h-[30%]">
@@ -101,7 +123,7 @@ const Home = () => {
                     </div>
 
                     {/* Services */}
-                    <div className="w-full mb-20">
+                    <div className="w-full mb-20" id="services">
                         <div className="w-3/6 mb-10 md:w-full">
                             <Divider />
                             <p className="font-open text-4xl font-semibold mb-2 md:text-lg"><span className="text-[#061FFF] font-bold">Services</span> We Render At <span className="text-[#061FFF] font-bold">Z</span>ani.co</p>

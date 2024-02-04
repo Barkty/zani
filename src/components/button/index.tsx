@@ -10,7 +10,7 @@ export const Button = ({ type, onClick, variant, children }: ButtonProps) => {
         <button
          type={type} 
          onClick={onClick} 
-         className={`py-2.5 px-6 rounded text-[#FFFFFF] font-pop text-base font-medium ${variant === 'primary' ? 'bg-[#284F8A]' : 'bg-[#284F8A]'}`}>
+         className={`py-2.5 px-6 rounded text-[#FFFFFF] font-pop text-base font-medium ${variant === 'primary' ? 'bg-[#284F8A]' : 'bg-[#6E83A480]'}`}>
             {children}
         </button>
     )
