@@ -28,6 +28,7 @@ const Home = () => {
         <Layout>
             <>
                 <div
+                data-testid='hero'
                 className="w-full h-screen bg-center bg-no-repeat bg-cover mb-8 relative left-0 bottom-0 right-0 -top-14"
                 style={{
                     backgroundImage: `url(${hero})`,

@@ -5,7 +5,9 @@ const Home = lazy(() => import('pages'))
 
 function App() {
   return (
-    <Home />
+    <div data-testid='home'>
+      <Home />
+    </div>
   );
 }
 
